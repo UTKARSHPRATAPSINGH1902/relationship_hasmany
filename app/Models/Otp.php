@@ -9,6 +9,5 @@ class Otp extends Model {
     use HasFactory;
     
     protected $fillable = ['phone', 'otp', 'expired_on'];
-
     protected $dates = ['expired_on']; // Ensure expired_on is treated as a date
 }
